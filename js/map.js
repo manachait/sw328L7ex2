@@ -31,5 +31,4 @@ function initMap() {
 		map: map, 
 		title: "Pin1"
 	});
-	pin.setMap(map);
 }
