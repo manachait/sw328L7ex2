@@ -1,4 +1,3 @@
-var pin;
 function init(){
 	document.addEventListener("deviceready", onDeviceReady, false)
 }
@@ -24,16 +23,16 @@ function initMap() {
 	};			
 	var mapObj = document.getElementById("myMap");
 	var map = new google.maps.Map(mapObj, mapOptions);
-	
+	var pin;
 	var pin1 = new google.maps.LatLng(13.779896, 100.5601513);
 	pin = new google.maps.Marker({
 		position: pin1, 
 		map: map, 
 		title: "UTCC"
 	});
-	var pin2 = new google.maps.LatLng(13.8167506, 100.5586814);
+	pin1 = new google.maps.LatLng(13.8167506, 100.5586814);
 	pin = new google.maps.Marker({
-		position: pin2, 
+		position: pin1, 
 		map: map, 
 		title: "Central Ladprao"
 	});	
