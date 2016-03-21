@@ -25,10 +25,16 @@ function initMap() {
 	var mapObj = document.getElementById("myMap");
 	var map = new google.maps.Map(mapObj, mapOptions);
 	
-	var pin1 = new google.maps.LatLng(13.8225, 100.5207);
+	var pin1 = new google.maps.LatLng(13.779896, 100.5601513);
 	pin = new google.maps.Marker({
 		position: pin1, 
 		map: map, 
-		title: "Pin1"
+		title: "UTCC"
 	});
+	var pin2 = new google.maps.LatLng(13.8167506, 100.5586814);
+	pin = new google.maps.Marker({
+		position: pin2, 
+		map: map, 
+		title: "Central Ladprao"
+	});	
 }
